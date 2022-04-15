@@ -4,7 +4,7 @@ info:
   description: API reference for token authentication. 
   contact:
     email: support@getmentum.com
-  version: '0.1'
+  version: '1.0'
 
 servers:
   - url: https://api.getmentum.com/v0
