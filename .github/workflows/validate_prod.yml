@@ -17,7 +17,7 @@ jobs:
         with:
           rdme: validate token-auth.yml
 
-      - name: Publish OAS to staging
+      - name: Publish OAS to production
         uses: readmeio/rdme@7.1.1
         with:
           rdme: openapi token-auth.yml --key=${{ secrets.README_API_KEY }} --id=${{ secrets.API_DEFINITION_ID }}
