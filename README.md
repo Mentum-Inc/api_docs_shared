@@ -11,3 +11,7 @@
    3. `npm -g redoc-cli`
 2. Run server `redoc-cli serve openapi.yml`
 
+## Validating OpenAPI Locally
+
+1. `npm install rdme --save-dev`
+2. `npx rdme openapi openapi/openapi.yml`
