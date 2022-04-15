@@ -1,5 +1,3 @@
-# For info on getting the latest rdme version and obtaining your API_DEFINITION_ID,
-# see our docs: https://docs.readme.com/docs/rdme#example-syncing-an-openapi-definition
 name: Validate and sync OAS to ReadMe
 on:
   push:
