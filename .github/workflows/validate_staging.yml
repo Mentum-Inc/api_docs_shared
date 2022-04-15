@@ -1,0 +1,21 @@
+name: Validate the OpenAPI file and push to staging
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Validate OAS
+        uses: readmeio/rdme@7.1.1
+        with:
+          rdme: validate token-auth.yml
+
+      - name: Publish OAS to staging
+        uses: readmeio/rdme@7.1.1
+        with:
+          rdme: openapi token-auth.yml --key=${{ secrets.STAG_README_API_KEY }} --id=${{ secrets.STAG_API_DEFINITION_ID }}
