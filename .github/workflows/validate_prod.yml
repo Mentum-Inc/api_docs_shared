@@ -15,9 +15,9 @@ jobs:
       - name: Validate OAS
         uses: readmeio/rdme@7.1.1
         with:
-          rdme: validate openapi/openapi.yml
+          rdme: validate token-auth.yml
 
       - name: Publish OAS to staging
         uses: readmeio/rdme@7.1.1
         with:
-          rdme: openapi openapi/openapi.yml --key=${{ secrets.README_API_KEY }} --id=${{ secrets.API_DEFINITION_ID }}
+          rdme: openapi token-auth.yml --key=${{ secrets.README_API_KEY }} --id=${{ secrets.API_DEFINITION_ID }}
