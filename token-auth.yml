@@ -80,7 +80,7 @@ paths:
                       description: The response message
                       type: string
                       example: Unauthorized
-  /api/accessToken/logout:
+  /auth/accessToken/logout:
       post:
         security:
           - Basic_Authentication: []
