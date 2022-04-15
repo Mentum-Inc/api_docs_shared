@@ -42,7 +42,7 @@ components:
       bearerFormat: JWT
 
 paths:
-  /api/accessToken/create:
+  /auth/accessToken/create:
       post:
         security:
           - Basic_Authentication: []
@@ -80,7 +80,7 @@ paths:
                       description: The response message
                       type: string
                       example: Unauthorized
-  /api/accessToken/logout:
+  /auth/accessToken/logout:
       post:
         security:
           - Basic_Authentication: []
@@ -120,7 +120,7 @@ paths:
                       description: The response message
                       type: string
                       example: Unauthorized
-  /api/accessToken/refresh:
+  /auth/accessToken/refresh:
       post:
         tags:
           - Token Authentication
