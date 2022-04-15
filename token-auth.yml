@@ -120,7 +120,7 @@ paths:
                       description: The response message
                       type: string
                       example: Unauthorized
-  /api/accessToken/refresh:
+  /auth/accessToken/refresh:
       post:
         tags:
           - Token Authentication
