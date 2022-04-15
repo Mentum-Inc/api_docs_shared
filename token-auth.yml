@@ -42,7 +42,7 @@ components:
       bearerFormat: JWT
 
 paths:
-  /api/accessToken/create:
+  /auth/accessToken/create:
       post:
         security:
           - Basic_Authentication: []
