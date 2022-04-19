@@ -87,8 +87,8 @@ paths:
           - JWT_Authentication: []
         tags:
           - Token Authentication
-        summary: Log Out an Access Token
-        description: Log Out an Access Token
+        summary: Log out an Access Token
+        description: Log out an Access Token
         requestBody:
           content:
             application/json:
@@ -124,8 +124,8 @@ paths:
       post:
         tags:
           - Token Authentication
-        summary: Refresh an Access Token.
-        description: Refresh an Access Token.
+        summary: Refresh an Access Token
+        description: Refresh an Access Token
         requestBody:
           content:
             application/json:
