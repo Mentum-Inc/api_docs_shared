@@ -15,3 +15,5 @@
 
 1. `npm install rdme --save-dev`
 2. `npx rdme openapi openapi/openapi.yml`
+
+Note: This repo should remain public as long as its referenced by other OpenAPI files.
