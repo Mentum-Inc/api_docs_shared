@@ -7,8 +7,6 @@ info:
   version: '1.0'
 
 servers:
-  - url: https://api.getmentum.com/v0
-    description: Production endpoint.
   - url: https://sandbox.getmentum.com/v0
     description: Sandbox environment.
 
