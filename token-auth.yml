@@ -85,8 +85,8 @@ paths:
           - JWT_Authentication: []
         tags:
           - Token Authentication
-        summary: Log out an Access Token
-        description: Log out an Access Token
+        summary: Log out a Token
+        description: Use this endpoint to log out an access token, refresh token, or both.
         requestBody:
           content:
             application/json:
@@ -130,9 +130,6 @@ paths:
               schema: 
                 type: object
                 properties:
-                  access:
-                    description: JWT Access Token
-                    type: string
                   refresh:
                     description: JWT Refresh Token
                     type: string
