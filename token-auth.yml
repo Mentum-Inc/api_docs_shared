@@ -48,11 +48,16 @@ paths:
         - Token Authentication
         summary: Create an Access Token
         description: Create a token for a registered or an unregistered user. Pass the metnum_user_id for registered users.
-        properties:
-             mentum_user_id:
-              description: The user's Mentum ID that was created during account opening.
-              type: string
-              format: uuid
+        requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                  mentum_user_id:
+                    description: The user's Mentum ID that was created during account opening.
+                    type: string
+                    format: uuid
         responses:
           '200':
             description:  OK
