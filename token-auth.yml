@@ -47,7 +47,7 @@ paths:
         tags:
         - Token Authentication
         summary: Create an Access Token
-        description: Create a token for a registered or an unregistered user. Pass the metnum_user_id for registered users.
+        description: Create a token for a registered or an unregistered user. Pass the mentum_user_id for registered users.
         requestBody:
           content:
             application/json:
