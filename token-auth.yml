@@ -48,10 +48,10 @@ paths:
         - Token Authentication
         summary: Create an Access Token
         description: |
-          Create a token for a registered or an unregistered user. Pass the `mentum_user_id`` for registered users.
+          Create a token for a registered or an unregistered user. Pass the `mentum_user_id` for registered users.
           
-          Registered user: a user account that has completed the onboarding form and has a `mentum_user_id` assigned.
-          Unregistered user: a user account that has not yet completed the onboarding form and has no `mentum_user_id`.
+          Registered user: a user account that has created an account and has a `mentum_user_id` assigned.
+          Unregistered user: a user that has not yet created an account and does not have a `mentum_user_id`.
         requestBody:
           content:
             application/json:
